@@ -3,16 +3,25 @@
 
 
 .box {
-    width:500px;
-    height:500px;
-
-    &__icon {
-        width: 20px;
-        height: 20px;
-        background-color: rgba(0, 0, 0, 0.418);
-        color: red
+    margin: 0 auto;
+    background-color: #3399CC;
+    border: 25px solid #2B81AC;
+    box-sizing: border-box;
+    gap: 35px;
+    &__title {
+        padding-left: 110px;
+       font-size: 21px;
+       align-self: flex-start;
+        @include sizeW_H(263px,34px)
     }
 
+    &__advice {
+        padding-left: 110px;
+        align-self: flex-start;
+        @extend %advice;
+    }
+
+    @include sizeW_H(1440px,900px);
     @extend %text__card;
-    @include flexy(center,center,column,wrap);
+    @include flexy(center,center,column,no-wrap);
 }
