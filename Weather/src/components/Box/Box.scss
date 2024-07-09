@@ -1,8 +1,18 @@
-
+@import "../../styles/extencions.scss";
+@import "../../styles/mixins.scss";
 
 
 .box {
     width:500px;
     height:500px;
-    display: flex;
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        background-color: rgba(0, 0, 0, 0.418);
+        color: red
+    }
+
+    @extend %text__card;
+    @include flexy(center,center,column,wrap);
 }
