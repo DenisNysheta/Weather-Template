@@ -1,20 +1,20 @@
 import styled from "styled-components"
 import "./Box.scss"
+import Box__Weather from "../Box__Weather/Box__Weather"
 
 export default function Box(props) {
 
-    const BOX = styled.div`
-        width:500px;
-        height:500px;
-        background-color:${props.color == 2 ? "red" : props.color == 3 ? "green" : "blue"};
-    `
-
     return (
         <>
-            <BOX className="box">
-                <p className="box__text">Hello World</p>
-                <p className="box__icon"><i className="wi wi-night-sleet"></i></p>
-            </BOX>
+            <div className="box">
+                <h1 className="box__title">
+                    CSS Weather Forecast <i style={{fontSize:"27px"}} className="wi wi-sunrise"></i>
+                </h1>
+                <Box__Weather/>
+                <p className="box__advice">
+                    Have a nice day and don't forget umbrella if you are in New Delhi now!
+                </p>
+            </div>
         </>
     )
 }
