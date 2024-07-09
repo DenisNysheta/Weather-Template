@@ -1,0 +1,16 @@
+@import "../../styles/extencions.scss";
+@import "../../styles/mixins.scss";
+
+.weather-box {
+    background-color: white;
+    display: grid;
+    grid-template: repeat(4,147px) / repeat(4,291.5px);
+    gap: 5px;
+    grid-template-areas: 
+    "first first second third"
+    "four five six seven"
+    "eight nine nine ten"
+    "eleven eleven eleven eleven";
+    padding: 5px;
+    @include sizeW_H(1180px,603px)
+}
