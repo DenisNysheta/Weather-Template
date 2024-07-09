@@ -1,0 +1,16 @@
+@import "../../styles/extencions.scss";
+@import "../../styles/mixins.scss";
+
+.weather-item {
+    background-color: red;
+    gap: 15px;
+
+    &__info {
+        text-align: center;
+        margin: 0;
+        gap: 20px;
+        @include flexy(center,center,row,no-wrap)
+    }
+
+    @include flexy(center,center,column,no-wrap)
+}
