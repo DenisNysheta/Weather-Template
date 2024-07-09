@@ -1,4 +1,11 @@
-@font-face {
-    font-family: "PT Sans Regular";
-    src: url('../fonts/lucidasansunicode.ttf') format(ttf);
+// @font-face {
+//     font-family: "Lucida Sans";
+//     src: url('../fonts/lucidasansunicode.ttf') format(ttf);
+// }
+
+%text__card {
+    font-size: 22px;
+    line-height: 25.78px;
+    text-align: center;
+    color: white;
 }
