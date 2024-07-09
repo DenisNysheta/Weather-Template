@@ -5,3 +5,8 @@
     flex-direction: $direction;
     flex-wrap: $wrap;
 }
+
+@mixin sizeW_H($width,$height) {
+    width: $width;
+    height: $height;
+}
