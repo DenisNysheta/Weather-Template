@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <Box color={4}/>
+      <Box />
     </>
   )
 }
